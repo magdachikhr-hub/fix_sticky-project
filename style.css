@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 main {
@@ -14,6 +17,7 @@ main {
     background-size: cover;
     background-image: url(./images/Combined\ Shape.png);
     position: relative;
+    padding-top: 33px;
   }
 }
 
@@ -28,4 +32,41 @@ div.data {
   background-color: white;
   position: absolute;
   top: 200px;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 31px;
+}
+
+div.position_input {
+  display: flex;
+  position: relative;
+  input {
+    width: 555px;
+    font-size: 18px;
+    padding: 18px 0 18.67px 24px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  }
+
+  div.arrow {
+    background-color: black;
+    height: 58px;
+    width: 58px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  div.arrow:hover {
+    background-color: #3f3f3f;
+  }
 }
